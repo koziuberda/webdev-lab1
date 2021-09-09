@@ -10,6 +10,10 @@ body {
     grid-template-areas: "header header header" "navigation main right-aside" "navigation middle-aside right-aside" "footer footer right-aside";
 }
 
+.header, .navigation, .main, .middle-aside, .right-aside, .footer {
+    padding: 1%;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,11 +29,23 @@ body {
     justify-content: space-between;
     background-color: coral;
     grid-area: navigation;
+    padding: 15%;
+}
+
+.navigation__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation__link:hover{
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
 .main {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     background-color: white;
     grid-area: main;
 }
@@ -52,10 +68,8 @@ body {
     grid-area: footer;
 }
 
-.header, .navigation, .main, .middle-aside, .right-aside, .footer {
-    padding: 1%;
-}
-
-#cat-img {
+#main-img {
+    margin: auto;
     width: 35%;
+    height: auto;
 }
