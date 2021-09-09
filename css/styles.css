@@ -11,16 +11,25 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: aqua;
     grid-area: header;
 }
 
 .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: coral;
     grid-area: navigation;
 }
 
 .main {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     grid-area: main;
 }
@@ -36,6 +45,17 @@ body {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: aqua;
     grid-area: footer;
+}
+
+.header, .navigation, .main, .middle-aside, .right-aside, .footer {
+    padding: 1%;
+}
+
+#cat-img {
+    width: 35%;
 }
