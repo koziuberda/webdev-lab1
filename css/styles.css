@@ -3,7 +3,12 @@ body {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-rows: 20% 45% 15% 20%;
+    grid-template-rows:
+        minmax(min-content, 20%) minmax(min-content, 45%) minmax(
+            min-content,
+            15%
+        )
+        minmax(min-content, 20%);
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: 'header header header' 'navigation main right-aside' 'navigation middle-aside right-aside' 'footer footer right-aside';
 }
