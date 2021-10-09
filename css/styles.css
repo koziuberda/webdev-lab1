@@ -1,3 +1,5 @@
+@import url('/css/variables.css');
+
 body {
     margin: 0;
     display: grid;
@@ -26,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #63b995;
+    background-color: var(--header-background);
     grid-area: header;
 }
 
@@ -35,7 +37,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #adeee3;
+    background-color: var(--navigation-background);
     grid-area: navigation;
     padding: 15%;
 }
@@ -55,17 +57,17 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--main-background);
     grid-area: main;
 }
 
 .middle-aside {
-    background-color: #a6c36f;
+    background-color: var(--middle-aside-background);
     grid-area: middle-aside;
 }
 
 .right-aside {
-    background-color: #87bdc2;
+    background-color: var(--right-aside-background);
     grid-area: right-aside;
 }
 
@@ -73,7 +75,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c6d4ff;
+    background-color: var(--footer-background);
     grid-area: footer;
 }
 
