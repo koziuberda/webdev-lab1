@@ -1,0 +1,18 @@
+{
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-plugin-sonarjs": "^0.10.0",
+        "husky": "^7.0.0",
+        "prettier": "2.4.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0"
+    },
+    "scripts": {
+        "jslint": "eslint \"js/**/*.js\" --ignore-path .gitignore",
+        "jslint:fix": "eslint --fix \"js/**/*.js\" --ignore-path .gitignore",
+        "format": "prettier --check . --ignore-path .gitignore",
+        "format:fix": "prettier --write . --ignore-path .gitignore",
+        "stylelint": "stylelint \"**/*.css\" --ignore-path .gitignore",
+        "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore"
+    }
+}
